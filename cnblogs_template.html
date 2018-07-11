@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>博客模板</title>
+    <style>
+		#cnblogs_post_body .to_top{
+			position: fixed;
+			background: #ccc;
+			bottom: 5%;
+			right: 1.5%;
+			text-align: center;
+			width: 25px;
+			height: 25px;
+			line-height: 24px;
+			z-index: 1000;
+		}
+		#cnblogs_post_body .to_top a{
+			color: white;
+			font-size: 0.8em;
+			display: inline-block;
+			height: 100%;
+			width: 100%;
+		}
+        #cnblogs_post_body .h1,#cnblogs_post_body .h2 span,#cnblogs_post_body .cite{
+            border-radius:5px;
+            background-color: #ff6600;
+            padding: 5px 10px;
+        }
+        #cnblogs_post_body .h1{
+            font-size: 21px;
+        }
+        #cnblogs_post_body #index{
+            padding-left: 50px;
+        }
+        #cnblogs_post_body #index li,#cnblogs_post_body #index-1{
+            font-size: 15px !important;
+        }
+        #cnblogs_post_body #index-1,#cnblogs_post_body .syntaxhighlighter{
+            padding-left: 25px;
+        }
+		#cnblogs_post_body #index a,#cnblogs_post_body #index-1 a{
+            text-decoration: none;
+			color: black;
+        }
+		#cnblogs_post_body #index a:hover,#cnblogs_post_body #index-1 a:hover{
+            color: #9cba39; 
+			cursor: pointer;
+        }
+        #cnblogs_post_body .h2{
+            font-size: 16px;
+            padding: 0 25px 10px;
+        }
+        #cnblogs_post_body .cite{
+            display: inline-block;
+            font-size: 15px;
+            font-weight: bold;
+            width: 50px;
+        }
+        #cnblogs_post_body .text{
+            font-size: 15px;
+            padding-left: 25px;
+        }
+        #cnblogs_post_body .title{
+            font-weight: bold;
+        }
+        #cnblogs_post_body .img{
+			margin-left: 25px !important;
+			overflow: auto !important;
+		}
+		#cnblogs_post_body .syntaxhighlighter{
+            width: 98%!important;
+        }
+		#cnblogs_post_body .syntaxhighlighter .gutter div,#cnblogs_post_body .syntaxhighlighter code{
+			white-space: nowrap !important;
+		}
+        #cnblogs_post_body .cnblogs_code{
+            margin-left: 25px;
+        }
+		#cnblogs_post_body .keyword-highlight{
+			padding: 3px 7px;
+			color: #0c5176 !important;
+			border-radius: 2px;
+			background-color: #F5F8FA !important;
+		}
+		#cnblogs_post_body strong{
+			color: darkblue;
+		}
+		#cnblogs_post_body .list{
+			font-size: 15px;
+		}
+    </style>
+</head>
+<body>
+<!--********返回顶部浮动按钮********-->
+<div class="to_top"><a href="#top">TOP</a></div>
+
+<!--************首部目录************-->
+<h1 class="h1">本节内容</h1>
+<!--目录-不带层级-->
+<ol id="index">
+    <li><a href="#h1-1">1</a></li>
+    <li><a href="#h1-2">2</a></li>
+</ol>
+<!--目录-有层级-->
+<dl id="index-1">
+    <dt><a href="#h1-1">1.</a></dt>
+		<dd><a href="#h1-1-1">1.</a></dd>
+		<dd><a href="#h1-1-2">2.</a></dd>
+    <dt><a href="#h1-2">2.</a></dt>
+		<dd><a href="#h1-2-1">1.</a></dd>
+		<dd><a href="#h1-2-2">2.</a></dd>
+</dl>
+
+<!--**************标题**************-->
+<!--一级标题、二级标题-->
+<h1 id="h1-1" class="h1">一、</h1>
+<h2 id="h1-1-1" class="h2"><span>1、</span></h2>
+<h2 id="h1-1-2" class="h2"><span>2、</span></h2>
+<h1 id="h1-2" class="h1">二、</h1>
+<h2 id="h1-2-1" class="h2"><span>1、</span></h2>
+<h2 id="h1-2-2" class="h2"><span>2、</span></h2>
+<!--三级标题、四级标题-->
+<p class="text title">(1) </p>
+<p class="text title"> 1) </p>
+
+<!--**************正文**************-->
+<!--文本-->
+<div class="text">文本</div>
+<p class="text">段落</p>
+<!--图片-->
+<p class="img"></p>
+<!--列表-->
+<ul class="list">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+<!--代码块高亮-->
+<pre class="brush:编程语言">代码</pre>
+<pre class="brush:python">代码</pre>
+<pre class="brush:shell">代码</pre>
+<!--关键字高亮-->
+<code class="keyword-highlight"></code>
+<!--关键字加粗变色-->
+<strong></strong>
+
+<!--**************引用**************-->
+<!--引用-->
+<p class="cite">参考：</p>
+<div class="text"></div>
+<div class="text"></div>
+</body>
+</html>
+
